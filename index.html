@@ -514,20 +514,22 @@
             <h2>Contact <span>Me</span></h2>
         </div>
         <div class="contact-form" data-aos="zoom-in">
-            <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Enter Your Name" required>
-                <input type="email" name="Email" placeholder="Enter Your Email Address" required>
-                <input type="text" name="Phone" placeholder="Enter Your Mobile Number" required maxlength="10" pattern="[1-9]{1}[0-9]{9}">
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="a1de188c-01d7-4848-9819-e01007861952">
+                <input type="hidden" name="subject" value="New Submission from Portfolio">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email Address" required>
+                <input type="text" name="phone" placeholder="Enter Your Mobile Number" required maxlength="10" pattern="[1-9]{1}[0-9]{9}">
 
                 <textarea name="Message" id="" cols="30" rows="10" placeholder="Write Your Message Here" required></textarea>
 
-                <input type="submit" name="submit" value="Send Message" class="send-btn">
+                <input type="submit" name="submit" class="send-btn">
 
 
             </form>
 
         </div>
-        <span id="msg"></span>
+        <!--<span id="msg"></span>-->
 
     </section>
 
@@ -551,7 +553,7 @@
         duration: 1400,
       });
     </script>
-    <script>
+    <!--<script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwqmClO6wtPMqrcIjBJwKg-HwSLhnY2iVJ6v4-U3IsR4e0QlPa4-ZsnO1EzI2y_dV31/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
@@ -568,7 +570,7 @@
             })
             .catch(error => console.error('Error!', error.message))
         })
-      </script>
+      </script>-->
 
     
 </body>
