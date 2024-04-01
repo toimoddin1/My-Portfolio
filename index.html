@@ -522,6 +522,7 @@
                 <input type="text" name="phone" placeholder="Enter Your Mobile Number" required maxlength="10" pattern="[1-9]{1}[0-9]{9}">
 
                 <textarea name="Message" id="" cols="30" rows="10" placeholder="Write Your Message Here" required></textarea>
+                    <div class="h-captcha" data-captcha="true"></div>
 
                 <input type="submit" name="submit" class="send-btn">
 
@@ -547,6 +548,7 @@
 <!--js link-->
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script>
       AOS.init({
         offset: 300,
